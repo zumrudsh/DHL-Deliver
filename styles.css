@@ -1,0 +1,806 @@
+.root { /*УСТАНАВЛИВАЮ ВССЕ ЦВЕТА МАКЕТА*/
+    --yellow: #ffcc00;
+    --red: #ba0000;
+    --gray: #777777;
+    --black: #222222;
+}
+
+body { /*ШРИФТ, ЦВЕТ, ОБНУЛЕНИЕ ОТСТУПОВ*/
+    margin: 0;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    color: var(--black);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 1rem;
+}
+
+*, 
+* :before,
+* :after {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1170px;
+    padding-right: 1rem;
+    padding-right: 1rem;
+    margin: 0 auto;
+}
+
+
+/*ПЕРВЫЙ ЭКРАН*/
+
+/*ПРЕДМЕНЮ*/
+.header1 { /*СТИЛИЗАЦИЯ МЕНЮ, ГДЕ ЯЗЫК И КОНТАКТЫ(КНОПКИ CONTACT CENTER И COUNTRY PROFILE), КРАСНОГО ЦВЕТА*/
+    background: #ba0000;
+    height: 50px;
+    
+}
+
+.header1-information { /*ВЫБОР ЯЗЫКА И СТРЕЛОЧКА*/
+    padding-top: 16px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact-information { /*КНОПКИ CONTACT CENTER И COUNTRY PROFILE*/
+    display: flex; 
+    justify-content: space-between;
+}
+
+.country-profile {  /*ОТСТУП СЛЕВА У COUNTRY PROFILE*/
+    padding-left: 10px;
+}
+
+.arrow-down { /*СТИЛИЗАЦИЯ СТРЕЛОЧКИ*/
+    width: 8px;
+    height: 8px;
+    transform: rotate(135deg);
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    margin-left: 10px;
+    margin-top: 4px;
+    
+}
+
+.language-and-arrow { /*ЯЗЫК И СТРЕЛОЧКА, РАССТОЯНИЕ МЕЖДУ НИМИ*/
+    display: flex; 
+    justify-content: space-between
+
+}
+/* КОНЕЦ ПРЕДМЕНЮ*/
+
+/*ОСНОВНОЕ МЕНЮ*/
+.header2 {
+    height: 121px;
+    background: #ffcc00;
+}
+
+.header2-information {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    
+
+}
+
+.nav  {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+     
+}    
+
+
+.list-item  {
+    
+    list-style: none;
+    
+}
+
+.nav a {
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #ba0000; 
+    list-style: none;
+    padding-right: 48px;
+    margin-left: 0;/*ПОЧЕМУ СЛЕВА ОТ МЕНЮ ПОЯВЛЯЕТСЯ ОТСУТП???? НЕ ПОЛУЧИЛОСЬ ЕГО УБРАТЬ!!!*/
+    
+}
+
+.third-item  {
+    font-weight: 700;
+    /*border-bottom: 2px #ba0000 solid;*/
+    
+
+}
+
+
+.button1 {
+    width: 50px;
+    height: 50px;
+    background: #ba0000;
+    border-radius: 50px;
+    border-style: none;
+    box-shadow: 0em 0.5em 25px #ba0000;
+}
+
+/*КОНЕЦ ОСНОВНОГО МЕНЮ*/
+
+/*ГЛАВНЫЙ ЭКРАН*/
+.first-screen-content {
+    background-image: url('images/background.png'); /*КАРТИНКА УМЕНЬШЕННО ВСТАВИЛАСЬ НА ФОН*/
+}
+
+h1 {
+    text-transform: capitalize;
+    color: white;
+    font-weight: bolder;
+    font-size: 70px;
+    padding-top: 184px;
+    width: 443px;
+    line-height: 80px;
+    letter-spacing: 3px;
+
+}
+
+hr { /*ПОЛОСКА ПОД ЗАГОЛОВОКОМ*/
+    width: 100px; /*ШИРИНА (ДЛИНА)*/
+    size: 7px; /*ТОЛЩИНА ПОЛОСКИ*/
+    color: #ffcc00;
+    border-style: solid;
+    position: absolute; /*АБСОЛЮТНОЕ ПОЗИЦИОНИРОВАНИЕ, ПРИРАВНЯЛА К ЛЕВОМУ КРАЮ, ТК ПОЛОСКА СТОЯЛА ПО ЦЕНТРУ (ДЕФОЛТ)*/
+    left: 10;             /*КАК ОТОДВИНУТЬ ЭТУ ПОЛОСКУ ОТ ЗАГОЛОВКА????????*/
+}
+
+.first-screen-paragraph {
+    color: #ffcc00;
+    width: 747px;
+    margin-top: 30px; /*ОТСТУП ПАРАГРАФА ОТ ПОЛОСКИ*/
+}
+
+.slogan { /*СЛОГАН С ТОЧКАМИ*/
+    display: flex;
+    justify-content: space-between;
+    width: 350px; 
+    
+}
+
+.slogan-paragraph {
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+
+.dot { /*ТОЧКА*/
+    color: #ffcc00;
+}
+
+.pair-buttons {
+    display: flex;
+    padding-bottom: 180px; /*ОТСТУП СНИЗУ ОТ КНОПОК*/
+    
+}
+
+.btn2 {
+    width: 150px;
+    height: 50px;
+    background: #ffcc00;
+    box-shadow: 0em 0.5em 25px  #ffcc00; /*ТЕНЬ: 1.СМЕЩЕНИЕ ПО ГОРИЗОНТАЛИ, 2.СМЕЩЕНИЕ ПО ВЕРТИКАЛИ 3.РАЗМЫТИЕ ТЕНИ*/
+    text-transform: uppercase;
+    color: #ba0000;
+    font-size: 12px;
+    font-weight: bolder !important; /*НЕ РАБОТАЕТ ЖИРНОСТЬ!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #ffcc00;
+    margin-right: 20px; /*ОТСТУП СПРАВА ОТ ПЕРВОЙ КНОПКИ*/
+    
+    
+
+}
+
+.btn3 {
+    width: 190px;
+    height: 50px;
+    background: transparent;
+    /*box-shadow: 0em 0.5em 25px #222222;*/
+    text-transform: uppercase;
+    color: white;
+    font-size: 12px;
+    font-weight: bolder;/*НЕ РАБОТАЕТ ЖИРНОСТЬ!!!!!!!!!!!!!!!!!!!!!!*/
+    border-radius: 50px;
+    border-style:  solid;
+    border-color: white;
+    text-align: center;
+}
+
+/*КОНЕЦ ГЛАВНОГО ЭКРАНА*/
+
+
+/*2-ОЙ ЭКРАН*/
+.second-screen{
+    margin-bottom: 100px; /*ОТСТУП СНИЗУ ВСЕГО 2-ГО ЭКРАНА*/
+}
+
+
+.h2 {
+    font-size: 50px;
+    color: #ba0000;
+    text-transform: capitalize;
+    padding-top: 138px;
+    padding-bottom: 116px; 
+}
+
+.advantage-card {
+    width: 270px; /*ШИРИНА КАЖДОЙ КАРТОЧКИ С ОПИСАНИЕМ ПРЕИМУЩЕСТВ*/
+}
+
+.advantage-img{
+    margin-bottom: 30px; /*ОТСТУП КАРТИНОК ОТ ЗАГОЛОВКА*/
+}
+
+.advantage-headline {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ba0000;
+    text-transform: uppercase;
+}
+
+.advantage-description {
+    color: #777777;
+    font-size: 16px;
+}
+
+.read-more {
+    font-size: 16px;
+    color: var(--black);
+    font-weight: bold;
+    text-transform: capitalize;
+    padding-right: 5px;
+}
+
+.arrow-right {
+    color: #ba0000;
+    font-size: 15px;
+}
+
+.read-more-and-arrow { /*ЧТОБЫ ФРАЗА 'READ MORE' И СТРЕЛОЧКА РАСПОЛОЖИЛИСЬ НА ОДНОЙ ЛИНИИ*/
+    display: flex;
+}
+
+.advantages { /*ЧТОБЫ ВСЕ КАРТОЧКИ С ПРЕИМУЩЕСТВАМИ И КРАСНАЯ ФОРМА ЗАКАЗА РАСПОЛОЖИЛИСЬ НА ОДНОЙ ЛИНИИ*/
+    display: flex;
+    justify-content: space-between;
+}
+
+.dhi-worldwide-input-form { /*СТИЛИЗАЦИЯ ФОРМЫ*/
+    width: 270px;
+    height: 340px; 
+    background: #ba0000;
+}
+
+.input-form-content { /*ВНУТРЕННОСТИ ФОРМЫ: ЗАГОЛОВОК, ЛИНИЯ, ОПИСАНИЕ, ФОРМА, КНОПКА*/
+    text-align: left;
+    padding-top: 30px;
+    padding-left: 31px;
+}
+
+.input-form-headline {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding-bottom: 20px;/*ПОЛУЧИЛОСЬ НОРМАЛЬНО СДЕЛАТЬ ОТСУТП МЕЖДУ ЗАГОЛОВКОМ И ЛИНИЕЙ!!!!!!!ВАУ!!!!*/
+}
+
+.input-form-description {
+    font-size: 16px;
+    color: white;
+    font-weight: lighter;
+    padding-top: 30px;
+}
+
+.input-and-btn { /*ЧТОБЫ ИНПУТ И ЕГО КНОПКА РСПОЛОЖИЛИСЬ В РЯД БЕЗ РАССТОЯНИЯ МЕЖДУ ДРУГ ДРУГОМ*/
+    display: flex;
+}
+
+.input1 {
+    width: 159px;
+    height: 50px;
+    background-color: #9d0000;
+    border-style: none;
+    
+}
+
+::placeholder {  /*СТИЛИЗАЦИЯ ПЛЭЙСХОЛДЕРА*/
+    color: white;
+    font-family: 'Poppins';
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+.yellow-square-btn { /*СТИЛИЗАЦИЯ КНОПКИ ИНПУТА*/
+    background-color: #ffcc00;
+    border-style: solid;
+    border-color: #ffcc00;
+    width: 50px;
+    height: 50px;
+    text-align: center;/*КАК ВЫРАНЯТЬ СТРЕЛОЧКУ ПО СЕРЕДИНЕ КНОПКИ??????????????*/
+}
+
+.explore-button {
+    width: 150px;
+    height: 50px;
+    background: #ffcc00;
+    box-shadow: 0em 0.5em 25px  #ffcc00; /*ТЕНЬ: 1.СМЕЩЕНИЕ ПО ГОРИЗОНТАЛИ, 2.СМЕЩЕНИЕ ПО ВЕРТИКАЛИ 3.РАЗМЫТИЕ ТЕНИ*/
+    text-transform: uppercase;
+    color: #ba0000;
+    font-size: 12px;
+    font-weight: bold; /*НЕ РАБОТАЕТ ЖИРНОСТЬ!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    border-radius: 50px;
+    border-style: solid;
+    border-color: #ffcc00;
+    margin-top: 20px;   
+}
+
+/*КОНЕЦ ВТОРОГО ЭКРАНА*/
+
+/*3-ИЙ ЭКРАН*/
+.third-screen {
+    background-image: url('images/overley.png');
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+.third-screen-header {
+    padding-top: 155px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+.play-button {
+    border-style: solid;
+    border-color: #ffcc00;
+    border-radius: 50px;
+    width: 70px;
+    height: 70px;
+    background-color: #ffcc00;
+    color: #ba0000;
+    font-size: 20px;
+    text-align: center; /*кнопка плей(ЗНАЧОК) не центруется!!!*/
+    margin-top: 50px;/*ОТСТУП СВЕРХУ КНОПКИ ОТ ХЕДЕРА*/
+    box-shadow: 0em 0.5em 25px  #ffcc00;
+    
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center; /*ПОМЕСТИЛА КНОПКУ В ОТДЕЛЬНЫЙ ДИВ, ЧТОБЫ С ПОМОЩЬЮ ФЛЕКСА ОТЦЕНТРОВАТЬ*/
+}
+
+.services-advantages { /*ГРУППА ИЗ ТРЕХ КАРТОЧЕК С ОПИСАНИЕМ*/
+    display: flex;
+    justify-content: space-between;
+    padding-top: 149px; /*ОТСТУП ОТ КНОПКИ*/
+    
+}
+
+.service-advantage-card {/*ШИРИНА КАРТОЧКИ*/
+    width: 370px;
+    
+}
+
+.service-advantage-headline-and-list { /*ТЕНЬ БЛОКА ХЭДЛАЙНА С ОПИСАНИЕМ*/
+    border-style: solid;
+    border-color: white;
+    box-shadow:  0em 0.5em 25px  #b4b4b4;
+}
+
+.service-advantage-headline {/*ЗАГОЛОВОК*/
+    color: #ba0000;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 30px;
+    text-transform: capitalize;
+}
+
+.service-advantage-list {/*СПИСОК С ОПИСАНИЕМ*/
+    font-size: 16px;
+    color: #777777;
+}
+
+
+li.description-item {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding-right: 30px; /*НЕ МОГУВЫРАВНЯТЬ СПИСОК С ХЭДЛАЙНОМ!!!!!!!!!!!!!!!!!!*/
+}
+li.description-item:before {
+    content: "▶ "; /* Добавляем в качестве маркера символ */
+    color: #ffcc00;
+    padding-right: 14px;/*РАССТОЯНИЕ МЕЖДУ СПИСКОМ И МАРКЕРАМИ (ОТСТУП ОТ МАРКЕРА ВПРАВО)*/
+}
+
+/*КОНЕЦ ТРЕТЬЕГО ЭКРАНА*/
+
+
+/*4-ЫЙ ЭКРАН*/
+.delivery-input-form-and-picture {
+    display: flex; /*РАСПОЛОЖИЛА В РЯД ИНПУТ И КАРТИНКУ С РАМОЧКОЙ*/
+    
+}
+
+.delivery-input-form {
+    width: 570px;
+    height: 610px;
+    background-color: #ba0000;
+    position: relative;/*ДОБАВЛЕНО, ЧТОБЫ РАСПОЛОЖИТЬ ЖЕЛТУЮ ПЛАШКУ LOGISTICS СПРАВА СВЕРХУ*/
+}
+
+.delivery-input-form-headline {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-top: 19px;
+    padding-left: 111px;
+}
+
+.delivery-input-form-and-button {/*ИНПУТ С КНОПКОЙ, ОТСТУПЫ СВЕРХУ (ОТ ХЭДЛАЙНА) И СЛЕВА ОТ КРАЯ ФОРМЫ*/
+    display: flex;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+
+.one-input {
+    width: 437px;
+    height: 48px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+}
+
+.one-input::placeholder {  /*СТИЛИЗАЦИЯ ПЛЭЙСХОЛДЕРА*/ /*КАК СТИЛИЗОВАТЬ ПЛЕЙСХОЛДЕРЫ ПО-РАЗНОМУ???*/
+    color: white;
+    font-family: 'Poppins';
+    font-weight: normal;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.delivery-input-btn {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: white;
+    border-left: none;
+}
+
+/*ЧЕТВЕРТЫЙ ЖЕЛТЫЙ ИНПУТ*/
+
+.yellow-delivery-input-form-and-button {
+    display: flex;
+    padding-top: 40px;
+    padding-left: 40px;
+
+}
+
+.yellow-one-input {
+    width: 437px;
+    height: 48px;
+    background-color: #ffcc00;
+    border-style: solid;
+    border-color: #ffcc00;
+}
+
+.yellow-one-input::placeholder {  /*СТИЛИЗАЦИЯ ПЛЭЙСХОЛДЕРА*/ 
+    color: #ba0000;
+    font-family: 'Poppins';
+    font-weight: bold;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+.yellow-delivery-input-btn {
+    width: 48px;
+    height: 48px;
+    background-color: #ffcc00;
+    border-style: solid;
+    border-color: #ffcc00;
+    border-left: none;
+}
+
+.fourth-input-describe {
+    background: #9d0000;
+    width: 485px;
+    padding-left: 40px;
+    padding-top: 20px;
+    border-top: none;
+    border-right: 3px solid #ffcc00;
+    border-bottom: 3px solid #ffcc00;
+    border-left: 3px solid #ffcc00;
+    margin-left: 40px;/*ОПИСАНИЕ КАТИЛОСЬ ВЛЕВО, С ПОМОЩЬЮ МАРДЖИН Я ПОМЕСТИЛА ЕГО ПРЯМО ПОД 4-ЫЙ ПУНКТ*/
+}
+
+.fourth-input-headline {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+li.fourth-description-item {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding-right: 30px; /*НЕ МОГУВЫРАВНЯТЬ СПИСОК С ХЭДЛАЙНОМ!!!!!!!!!!!!!!!!!!*/
+}
+li.fourth-description-item:before {
+    content: "▶ "; /* Добавляем в качестве маркера символ */
+    color: #ffcc00;
+    padding-right: 14px;/*РАССТОЯНИЕ МЕЖДУ СПИСКОМ И МАРКЕРАМИ (ОТСТУП ОТ МАРКЕРА ВПРАВО)*/
+}
+
+
+.fourth-input-describe-list {
+    color: white;
+    font-size: 16px;
+}
+
+.logistics-yellow {
+    width: 278px;
+    height: 51px;
+    background-color: #ffcc00;
+    box-shadow: 0em 0.5em 25px  #ffcc00; /*ТЕНЬ: 1.СМЕЩЕНИЕ ПО ГОРИЗОНТАЛИ, 2.СМЕЩЕНИЕ ПО ВЕРТИКАЛИ 3.РАЗМЫТИЕ ТЕНИ*/
+    color: #ba0000;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    padding-top: 15px;
+    position: absolute; /*АБСОЛЮТНОЕ ПОЗИЦИОНИРОВАНИЕ ПЛАШКИ СПРАВА СВЕРХУ*/
+    top: 0%;
+    right: 0%;
+
+}
+
+.border-and-pic {
+    padding-left: 120px; /*ОТСТУП ОТ ФОРМЫ*/
+}
+
+.picture-yellow-border {
+    border: 22px solid #ffcc00;
+    width: 431px;
+    height: 500px;
+    
+}
+
+.yellow-border-picture {
+   padding-top: 8px;
+   padding-left: 8px;
+}
+
+.fourth-screen {
+    margin-bottom: 100px;/*ОТСТУП СНИЗУ ОТ 4-ГО ЭКРАНА*/
+}
+/*КОНЕЦ ЧЕТВЕРТОГО ЭКРАНА*/
+
+/*НАЧАЛО 5-ГО ЭКРАНА*/
+.fifth-screen {
+    background-color: #ba0000;
+    
+}
+
+.fifth-screen-headline-description-and-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fifth-screen-headline-and-description {
+    width: 745px;
+    padding-top: 100px;
+}
+
+.fifth-screen-headline {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 41px;
+}
+
+.fifth-screen-description {
+    color: white;
+    font-size: 16px;
+    font-weight: normal;/*НЕ ОТОБРАЖАЕТСЯ ТОНКИМ НАЧЕРТАНИЕМ!!!*/
+    padding-bottom: 100px; /*я могла бы сразу задать ВЫСОТУ всего экрана, но вместо этого я задаю нижние отступы*/
+}
+
+.fifth-screen-btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    background: #9d0000;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 1px;
+    
+    
+}
+
+.fifth-screen-button {
+    padding-top: 150px;
+}
+
+/*КОНЕЦ ПЯТОГО ЭКРАНА*/
+
+/*НАЧАЛО 6-ГО ЭКРАНА*/
+.partners {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.one-partner { /*стили для всех плашек*/
+    width: 270px;
+    height: 128px;
+    background: #f9f9f9;
+    border-style: solid;
+    border-color: #eedbdb;
+    border-width: 1px;
+}
+
+.partner-img {
+    padding-top: 47px;
+    padding-left: 17px;
+}
+
+.first-partner { /*стили для первой плашки*/
+    width: 270px;
+    height: 128px;
+    background: #f9f9f9;
+    border-style: solid;
+    border-color: #ba0000;
+    border-width: 1px;
+
+}
+/*КОНЕЦ ШЕСТОГО ЭКРАНА*/
+
+
+/*НАЧАЛО ФУТЕРА*/
+footer {
+    display: flex;
+}
+.column-and-picture {
+    display: flex;
+}
+
+.red-column {
+    width: 40px;
+    height: 311px;
+    background: #9d0000;
+}
+
+.footer-nav {/*МЕНЮ ФУТЕРА!!!!!!!!!!!!!!!!!!!!!!*/
+    display: flex;
+    padding-top: 60px;/*ОТСТУП СВЕРХУ ОТ ВСЕГО ФУТЕРА*/
+}
+.footer-nav-headline {/*ЗАГОЛОВОК*/
+    color: #ba0000;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 30px;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+
+.footer-nav-list {/*СПИСОК МЕНЮ*/
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #777777;
+}
+
+
+li.footer-nav-item {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding-right: 30px; /*НЕ МОГУВЫРАВНЯТЬ СПИСОК С ХЭДЛАЙНОМ!!!!!!!!!!!!!!!!!!*/
+}
+li.footer-nav-item:before {
+    content: "▶ "; /* Добавляем в качестве маркера символ */
+    color: #ba0000;
+    padding-right: 14px;/*РАССТОЯНИЕ МЕЖДУ СПИСКОМ И МАРКЕРАМИ (ОТСТУП ОТ МАРКЕРА ВПРАВО)*/
+}
+
+.footer-nav-item-first { /*ПЕРВЫЙ ПУНКТ ЖЕЛТОГО ЦВЕТА*/
+    color: #ffcc00;
+}
+
+li.footer-nav-item-first { /*СТИЛИ СЛЕТЕЛИ, ПОЭТОМУ ДОБАВЛЯЕМ СТИЛИ МАРКЕРА ОТДЕЛЬНО! И ДЛЯ ПЕРВОГО ПУНКТА*/
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding-right: 30px; /*НЕ МОГУВЫРАВНЯТЬ СПИСОК С ХЭДЛАЙНОМ!!!!!!!!!!!!!!!!!!*/
+}
+li.footer-nav-item-first:before {
+    content: "▶ "; /* Добавляем в качестве маркера символ */
+    color: #ba0000;
+    padding-right: 14px;/*РАССТОЯНИЕ МЕЖДУ СПИСКОМ И МАРКЕРАМИ (ОТСТУП ОТ МАРКЕРА ВПРАВО)*/
+}
+
+
+/*ВТОРАЯ КОЛОНКА МЕНЮ!!!!!!!!!!!!!!!!!*/
+.footer-nav-headline {/*ЗАГОЛОВОК*/
+    color: #ba0000;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 30px;
+    text-transform: uppercase;
+    padding-bottom: 16px;
+}
+
+.footer-nav-list {/*СПИСОК МЕНЮ*/
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #777777;
+}
+
+
+li.footer-nav-item {
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding-right: 30px; /*НЕ МОГУВЫРАВНЯТЬ СПИСОК С ХЭДЛАЙНОМ!!!!!!!!!!!!!!!!!!*/
+}
+li.footer-nav-item:before {
+    content: "▶ "; /* Добавляем в качестве маркера символ */
+    color: #ba0000;
+    padding-right: 14px;/*РАССТОЯНИЕ МЕЖДУ СПИСКОМ И МАРКЕРАМИ (ОТСТУП ОТ МАРКЕРА ВПРАВО)*/
+}
+
+.footer-nav-item-first { /*ПЕРВЫЙ ПУНКТ ЖЕЛТОГО ЦВЕТА*/
+    color: #ffcc00;
+}
+
+li.footer-nav-item-first { /*СТИЛИ СЛЕТЕЛИ, ПОЭТОМУ ДОБАВЛЯЕМ СТИЛИ МАРКЕРА ОТДЕЛЬНО! И ДЛЯ ПЕРВОГО ПУНКТА*/
+    list-style-type: none; /* Убираем маркеры у списка */
+    padding-right: 30px; /*НЕ МОГУВЫРАВНЯТЬ СПИСОК С ХЭДЛАЙНОМ!!!!!!!!!!!!!!!!!!*/
+}
+li.footer-nav-item-first:before {
+    content: "▶ "; /* Добавляем в качестве маркера символ */
+    color: #ba0000;
+    padding-right: 14px;/*РАССТОЯНИЕ МЕЖДУ СПИСКОМ И МАРКЕРАМИ (ОТСТУП ОТ МАРКЕРА ВПРАВО)*/
+}
+
+#facebook-blue {
+    color: #017edf; /*И ТУТ Я ПОНЯЛА, ЧТО МОЖНО ЗАДАТЬ ID И CLASS одновременно, А НЕ ПЕРЕПИСЫВАТЬ СТИЛИ ПО НЕСКОЛЬКО РАЗ!!!АААААААААААА*/
+}
+
+.yellow-column {
+    width: 40px;
+    height: 311px;
+    background: #ffcc00;
+}
+
+/*КОНЕЦ ФУТЕРА*/
